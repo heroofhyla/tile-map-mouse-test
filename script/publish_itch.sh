@@ -3,7 +3,7 @@ SCRIPT_DIR=`dirname "$SCRIPT_PATH"`
 
 cd "$SCRIPT_DIR"
 
-source build_config.sh
+source config.sh
 
 BUILDS="$BUILDS license:license"
 

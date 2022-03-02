@@ -3,11 +3,11 @@
 # entries based on your target platform.
 
 # Username of your itch.io account.
-ACCOUNT="change-me"
+ACCOUNT="aezart"
 
 # Name of your game as it appears in the itch.io slug. Will also be used when
 # naming build folders.
-GAME="change-me"
+GAME="TileMapMouseTest"
 
 # Space-separated list of builds. Each entry is an itch.io upload channel name
 # followed by a colon, followed by the name of the game executable file.
