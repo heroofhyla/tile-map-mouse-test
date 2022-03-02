@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://tile.png" type="Texture" id=1]
 [ext_resource path="res://Game.gd" type="Script" id=2]
 [ext_resource path="res://MouseTracker.gd" type="Script" id=3]
 [ext_resource path="res://ControllableCamera.gd" type="Script" id=4]
+[ext_resource path="res://text_file_reader/FileText.gd" type="Script" id=5]
 
 [sub_resource type="TileSet" id=1]
 0/name = "tile.png 0"
@@ -61,6 +62,7 @@ tile_data = PoolIntArray( 0, 2, 0, 131084, 0, 0, 131085, 0, 0, 131086, 0, 0, 196
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 150, 57 )
 current = true
+zoom = Vector2( 0.5, 0.5 )
 script = ExtResource( 4 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -72,3 +74,15 @@ script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="FileTextDisplay" type="Label" parent="CanvasLayer"]
+margin_left = 10.0
+margin_top = 460.0
+margin_right = 130.0
+margin_bottom = 474.0
+text = "v0.0.0-1-g1d610b2"
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+source_file = "res://version_info/version.txt"
